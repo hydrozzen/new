@@ -1,14 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-:root {
-  --red: hsl(240, 17%, 86%);
-  --green: hsl(154, 59%, 51%);
-  --blue: hsl(248, 32%, 49%);
-  --dark-blue: hsl(249, 10%, 26%);
-  --grayish-blue: hsl(246, 25%, 77%);
-  --white: white;
-  --body-font: "Poppins", sans-serif;
-}
 
 * {
   margin: 0;
@@ -22,10 +13,11 @@ body {
   box-sizing: border-box;
   font-family: var(--body-font);
   min-height: 100vh;
-  background-color: #cce2e6;
+ 
+  background-color: #e8fbff;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: var(--red);
+
   background-position: center;
 }
 
@@ -37,11 +29,45 @@ body::-webkit-scrollbar {
   margin: 0 auto;
   max-width: 1105px;
   width: 90%;
+  background-color: #20bcdc;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 7.5rem;
   grid-gap: 1.4rem;
 }
+  .hell{
+    color: rgb(14, 14, 14);
+    margin-left: -23%;
+    font-size: 232%;
+    font-weight: 750;
+    margin-top: 1%;
+   font-family:sans-serif;
+    
+    font: 129px;
+  }
+
+  .right{
+    float: right;
+  }
+
+  .getstart{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center!important;
+    color: #101010;
+    font-family: Open Sans,sans-serif;
+    font-size: 28px;
+  }
+  
+  .hya {
+    line-height: 35px;
+    font-size: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: -44%;
+    font-size: larger;
+   }
 
 /* Info Section */
 
@@ -75,16 +101,16 @@ body::-webkit-scrollbar {
 }
 
 .sales-btn {
-  border-radius: 10px;
+  border-radius: 1px;
   border-width: 1px;
   border-color: transparent;
-  border-style: solid;
+  border-style: dotted;
   cursor: pointer;
-  background-color: var(--blue);
-  color: var(--white);
+  
+  
   font-weight: 700;
   font-size: 1rem;
-  padding: 1.3rem 1rem;
+  padding: 0.3rem 1rem;
   box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
   -webkit-box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
   -moz-box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
@@ -97,8 +123,8 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
-  background-color: var(--white);
-  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1px;
   padding: 2.5rem 2.7rem;
   box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
   -webkit-box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
@@ -115,7 +141,7 @@ body::-webkit-scrollbar {
   -webkit-box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
   -moz-box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
 }
-  h3{
+  h1{
     font-weight: 450;
     color: black;
     font-size:x-large;
@@ -126,29 +152,62 @@ body::-webkit-scrollbar {
   width: 100%;
   display: flex;
   flex-direction: column;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: SFProDisplay-Medium;
   position: relative;
+  color: #656565;
+  font-family: Open Sans,sans-serif;
+  font-size: 12px;
 }
 
 
 input {
-  padding: 1.2rem;
-  border-radius: 5px;
-  border-width: 1px;
+  padding: 0.6rem;
+  border-radius: 3.5px;
+  border-width: 0.5px;
   border-style: solid;
-  border-color: var(--grayish-blue);
-  opacity: 0.8;
+  border-color:darkgrey;
+  margin-top: 1%;
+  color: #656565;
+  font-family: Open Sans,sans-serif;
+  font-size: 12px;
+  opacity: 0.99;
+  float: left;
 }
 input::placeholder {
-  font-weight: 700;
-  font-size: 0.9rem;
-  padding-left: 0.8rem;
+  font-weight: 100;
+
+  font-size: 0.8rem;
+  padding-left: 0.6rem;
+  
 }
 input:focus-visible {
   outline-width: 1px;
   outline-style: solid;
   outline-color: var(--blue);
 }
-
+.writting{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #101010;
+  font-size: larger;
+}
+.writtingg{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #000000;
+  font-size:medium;
+}
+.inwrite{
+  margin-left: 1%;
+}
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
 /* Labels */
 
 .name-label,
@@ -156,9 +215,12 @@ input:focus-visible {
 .email-label,
 .pass-label {
   text-align: right;
-  font-size: 0.7rem;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 11500;
   color: var(--red);
+  color: #656565;
+  font-family: Open Sans,sans-serif;
+  font-size: 12px;
   font-style: italic;
 }
 
@@ -187,14 +249,18 @@ input:focus-visible {
 }
 
 .submit-info {
-  border-radius: 5px;
+  border-radius: 8px;
   border-width: 1px;
+  background-color: #745be7;
   border-color: transparent;
   border-style: solid;
   cursor: pointer;
-  background-color: var(--blue);
-  color: var(--white);
-  text-transform: uppercase;
+  color: #fff!important;
+  font-family: SFProDisplay-Semibold;
+  padding-bottom: 0.5rem!important;
+  width: 100%!important;
+
+
   padding: 1.2rem;
   font-size: 0.9rem;
   font-weight: 600;
@@ -254,4 +320,96 @@ input:focus-visible {
 
 .side{
   background-color: #ffff;
+}
+
+
+
+
+
+
+
+
+
+/**first name and last nameee   **/
+
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 2px;
+}
+/******BACKGROUND WHITE KRNEE KAE LIYEEE***/
+.hellno{
+  background-color: #fff;
+}
+
+/*******AIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII********/
+.ai{
+  font-size: 44px!important;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  background-color: #ffff;
+  text-align: center!important;
+}
+
+/********************skyrockegt wali lineeeeeeeeeeeeeeeeeeeeeeeeee*********************/
+
+.sky{
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display: block;
+  font-weight: 350;
+  color: #4c4c4c;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  background-color: #ffff;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center!important;
+}
+
+.aii{
+  font-size: 43px!important;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  background-color: #ffff;
+  text-align: center!important;
+}
+
+/********************skyrockegt wali lineeeeeeeeeeeeeeeeeeeeeeeeee*********************/
+
+.skyy{
+  font-size: 17px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display: block;
+  font-weight: 350;
+  color: #4c4c4c;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  background-color: #ffff;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center!important;
+}
+
+
+
+.hellnooh{
+  background-color: #e4e4e4;
 }
